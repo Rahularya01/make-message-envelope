@@ -1,5 +1,10 @@
 import { Envelope } from "@/components/envelope";
+import { Suspense } from "react";
 
-export default function Home(pageProps: any) {
-  return <Envelope />;
+export default function Home() {
+  return (
+    <Suspense>
+      <Envelope />
+    </Suspense>
+  );
 }
