@@ -22,7 +22,7 @@ const FormSchema = z.object({
     .min(2, {
       message: "Must be at least 2 characters.",
     })
-    .max(50, { message: "Must be 50 characters or less." }),
+    .max(100, { message: "Must be 100 characters or less." }),
 });
 
 const MakeMessagePage = () => {
